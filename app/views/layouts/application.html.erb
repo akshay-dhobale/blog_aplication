@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog1</title>
+    <%= csrf_meta_tags %>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="bg-info">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Your Blogs</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to 'All Articles', articles_path %>
+          </li>
+        </ul>
+
+        <button class="btn btn-danger navbar-btn pull-right btn-border-black">
+          <%= link_to 'Create New Article', new_article_path , :class=>"btn-txt" %>
+        </button>
+
+      </div>
+    </nav>
+   
+    <div class="">
+      <%= yield %>
+    </div>
+  
+  </body>
+</html>

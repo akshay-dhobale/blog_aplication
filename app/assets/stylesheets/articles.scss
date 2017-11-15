@@ -1,0 +1,23 @@
+.article_block {
+  border: solid black 1px;
+  height: 200px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px; 
+  align-items: center; 
+}
+
+.btn-txt {
+  color: white; 
+}
+
+.bg-article{
+  background-color: dodgergreen
+}
+
+.new-size {
+  width: 400px;
+}
+

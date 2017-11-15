@@ -1,0 +1,22 @@
+<%= form_with(model: @article) do |form| %>
+  <div class="center-block panel panel-default" style="width: 400px;">
+    <h1 class="panel-heading">New Article</h1>
+    <div class="form-group">
+      <p class="panel-body">
+        <%= form.label :title %><br>
+        <%= form.text_field :title %><span style="color: red;">*required</span>
+      </p>
+    </div>
+    <div class="form-group">
+      <p class="panel-body">
+        <%= form.label :content %><br>
+        <%= form.text_area :content %>
+      </p>
+    </div>
+    <div>
+      <p>
+        <%= form.submit %>
+      </p>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+ 
+<%= form_with(model: @article) do |form| %>
+
+  <div class="center-block panel panel-default" style="width: 400px;">
+    <h1 class="panel-heading">Edit article</h1>
+    <div class="panel-body">
+      <p>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+      </p>
+      <p class="">
+        <%= form.label :content %><br>
+        <%= form.text_area :content %>
+      </p>
+      <p class="">
+        <%= form.submit %>
+      </p>
+    </div>
+   
+    <button>
+      <%= link_to 'Back', article_path %>
+    </button>
+  </div>
+<% end %>
